@@ -1,181 +1,479 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head> <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18055094077"></script>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Biozenthi Biotecnologia — Site Institucional</title>
+<meta name="description" content="Site institucional da Biozenthi Biotecnologia LTDA (CNPJ 12.318.178/0001-64), projeto independente. Desenvolvimento de cosméticos, produtos de higiene pessoal e soluções biotecnológicas em Criciúma/SC. Sem vendas online." />
+<meta name="theme-color" content="#090A0C" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="htt...ap" rel="stylesheet" />
+<script>document.documentElement.classList.add('js')</script>
+<script src="https://cdn.tailwindcss.com"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18055094077');
+tailwind.config = { theme: { extend: {
+  fontFamily: { serif: ['"Cormorant Garamond"', 'serif'], sans: ['"Instrument Sans"', 'sans-serif'], mono: ['"JetBrains Mono"', 'monospace'] },
+  colors: { ink: '#090A0C', ink2: '#0D0F13', card: '#111318', gold: { DEFAULT: '#D4AF37', light: '#E9D9A6' } }
+} } };
 </script>
-
-  <!-- Event snippet for Visualização de página (3) conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18055094077/tgnmCJD6jZocEL2-q6FD',
-      'value': 1.0,
-      'currency': 'BRL'
-  });
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Biozenthi Biotecnologia","legalName":"Biozenthi Biotecnologia LTDA","taxID":"12.318.178/0001-64","email":"contato@biozenthi.com.br","telephone":"+55 48 3433-5058","address":{"@type":"PostalAddress","streetAddress":"Rua Fernão Dias, 187 - Centro","addressLocality":"Criciúma","addressRegion":"SC","postalCode":"88801-670","addressCountry":"BR"}}
 </script>
-
-  <!-- Event snippet for Visualização de página (3) conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18055094077/tgnmCJD6jZocEL2-q6FD',
-      'value': 1.0,
-      'currency': 'BRL',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
-
-
-
-  
-
-    
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Biozenthi Biotecnologia | Soluções em Cosméticos</title>
-
 <style>
-body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#0f172a;
-    color:#fff;
-}
-
-header {
-    background:#020617;
-    padding:20px;
-    text-align:center;
-    border-bottom:1px solid #1e293b;
-}
-
-header h1 {
-    margin:0;
-    color:#38bdf8;
-}
-
-.hero {
-    padding:80px 20px;
-    text-align:center;
-}
-
-.hero h2 {
-    font-size:2.5em;
-}
-
-.hero p {
-    max-width:600px;
-    margin:20px auto;
-    color:#cbd5f5;
-}
-
-.btn {
-    display:inline-block;
-    padding:15px 30px;
-    background:#38bdf8;
-    color:#000;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:5px;
-}
-
-.section {
-    padding:60px 20px;
-    max-width:1000px;
-    margin:auto;
-}
-
-.services {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap:20px;
-}
-
-.card {
-    background:#020617;
-    padding:20px;
-    border:1px solid #1e293b;
-    border-radius:10px;
-}
-
-.footer {
-    background:#020617;
-    padding:40px;
-    font-size:0.9em;
-    border-top:1px solid #1e293b;
-}
+html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:#090A0C;color:#F9FAFB;font-family:"Instrument Sans",sans-serif;-webkit-font-smoothing:antialiased}
+::selection{background:#D4AF37;color:#090A0C}
+.grad{background:linear-gradient(120deg,#F3E7C4 0%,#D4AF37 45%,#B88A2E 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ovl{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.25em;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.ovl::before{content:"";width:32px;height:1px;background:currentColor}
+.btn-gold{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;border-radius:9999px;padding:.95rem 1.75rem;font-size:.9rem;font-weight:600;background:#D4AF37;color:#090A0C;transition:background-color .3s,transform .3s;box-shadow:0 10px 40px -12px rgba(212,175,55,.55)}
+.btn-gold:hover{background:#F3E7C4;transform:translateY(-2px)}
+.btn-ghost{display:inline-flex;align-items:center;border-radius:9999px;padding:.95rem 1.75rem;font-size:.9rem;font-weight:500;border:1px solid rgba(16,185,129,.45);transition:background-color .3s,border-color .3s}
+.btn-ghost:hover{background:rgba(16,185,129,.1);border-color:#10B981}
+.nav-link{position:relative;transition:color .3s}
+.nav-link::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:100%;background:#D4AF37;transform:scaleX(0);transform-origin:right;transition:transform .45s cubic-bezier(.16,1,.3,1)}
+.nav-link:hover::after{transform:scaleX(1);transform-origin:left}
+.hero-grid{background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:80px 80px;-webkit-mask-image:radial-gradient(ellipse at 30% 40%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse at 30% 40%,#000 20%,transparent 75%)}
+.line{display:block;overflow:hidden;padding-bottom:.08em}
+.line>span{display:block;transform:translateY(110%);animation:up 1.2s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes up{to{transform:translateY(0)}}
+.fade-in{opacity:0;animation:fi 1s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes fi{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.js .reveal{opacity:.001;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js .reveal.in{opacity:1;transform:none}
+.tilt{transition:transform .25s ease-out;transform-style:preserve-3d}
+.spot{background:radial-gradient(circle at 50% 30%,transparent 0%,rgba(9,10,12,.25) 40%,rgba(9,10,12,.85) 100%)}
+.marquee{animation:mq 60s linear infinite}
+@keyframes mq{to{transform:translateX(-100%)}}
+.mmask{-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.bento img{transition:transform 1.2s ease-out,opacity 1.2s ease-out}
+.bento:hover img{transform:scale(1.1);opacity:.65}
+.bento .arr{transition:background-color .3s,color .3s,border-color .3s}
+.bento:hover .arr{background:#D4AF37;color:#090A0C;border-color:#D4AF37}
+.srow .sl{width:0;transition:width .8s cubic-bezier(.16,1,.3,1)}
+.srow:hover .sl{width:100%}
+.srow h3{transition:transform .5s}
+.srow:hover h3{transform:translateX(8px)}
+.field{display:block;width:100%;margin-top:.5rem;background:transparent;color:#F9FAFB;border:0;border-bottom:1px solid rgba(255,255,255,.15);padding:.6rem 0;font-size:1rem;outline:none;transition:border-color .3s}
+.field:focus{border-bottom-color:#D4AF37}
+.lbl{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#a1a1aa}
+dialog::backdrop{background:rgba(0,0,0,.85)}
+@media (prefers-reduced-motion:reduce){.marquee{animation:none}}
 </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Biozenthi Biotecnologia</h1>
-    <p>Inovação Científica em Cosméticos e Saúde</p>
+<!-- POP-UP DE TRANSPARÊNCIA -->
+<dialog id="disclaimer" class="max-w-xl w-[92vw] rounded-[28px] bg-card text-zinc-300 border border-gold/30 p-0" data-lenis-prevent>
+  <div class="p-7 sm:p-10">
+    <p class="font-mono text-xs tracking-[0.25em] uppercase text-gold">✓ Antes de continuar</p>
+    <h2 class="mt-5 font-serif text-3xl sm:text-4xl font-light leading-tight text-white">Transparência sobre este site</h2>
+    <ul class="mt-7 space-y-5 text-sm leading-relaxed">
+      <li class="flex gap-3"><span class="text-gold">🏛</span><span>Este é um projeto independente, publicado e mantido pela <strong class="text-zinc-100 font-medium">Biozenthi Biotecnologia LTDA</strong>, CNPJ <strong class="text-zinc-100 font-medium">12.318.178/0001-64</strong>, única responsável pelo conteúdo.</span></li>
+      <li class="flex gap-3"><span class="text-gold">⊘</span><span>Site institucional: <strong class="text-zinc-100 font-medium">não é uma loja virtual</strong>. Não há catálogo, carrinho, preço nem compra online.</span></li>
+      <li class="flex gap-3"><span class="text-gold">⚗</span><span>Conteúdo meramente informativo. Cosméticos não têm finalidade de cura, tratamento ou prevenção de doenças.</span></li>
+    </ul>
+    <button id="disclaimerClose" class="btn-gold mt-9 w-full">Entendi, continuar navegando</button>
+  </div>
+</dialog>
+
+<header class="fixed top-0 inset-x-0 z-50 border-b border-white/[0.08] bg-ink/75 backdrop-blur-xl">
+  <div class="mx-auto max-w-7xl px-5 md:px-10 h-[72px] flex items-center justify-between">
+    <a href="#inicio" class="flex items-center gap-3" aria-label="Início">
+      <svg viewBox="0 0 40 40" class="w-9 h-9" fill="none" aria-hidden="true"><path d="M20 2.5 35 11v18L20 37.5 5 29V11L20 2.5Z" stroke="#D4AF37" stroke-width="1.5"/><path d="M14.5 27V13h5.2c2.4 0 4 1.3 4 3.4 0 1.7-1 2.8-2.6 3.2 2 .3 3.3 1.6 3.3 3.5 0 2.4-1.8 3.9-4.5 3.9h-5.4Zm2.6-8.1h2.4c1.2 0 1.9-.7 1.9-1.8s-.7-1.7-1.9-1.7h-2.4v3.5Zm0 5.7h3c1.3 0 2.1-.7 2.1-1.9 0-1.2-.8-1.9-2.1-1.9h-3v3.8Z" fill="#F3E7C4"/><path d="M25.5 8.5c1.8.4 3 1.6 3.4 3.4-1.8-.4-3-1.6-3.4-3.4Z" fill="#10B981"/></svg>
+      <span class="leading-none"><span class="block font-serif text-xl">Biozenthi <em class="text-gold">Biotecnologia</em></span><span class="block font-mono text-[10px] tracking-[0.2em] uppercase text-zinc-400 mt-1">CNPJ 12.318.178/0001-64</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm text-zinc-300">
+      <a class="nav-link hover:text-white" href="#transparencia">Transparência</a>
+      <a class="nav-link hover:text-white" href="#atuacao">Atuação</a>
+      <a class="nav-link hover:text-white" href="#equipe">Equipe</a>
+      <a class="nav-link hover:text-white" href="#compromissos">Compromissos</a>
+      <a class="nav-link hover:text-white" href="#contato">Contato</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+554834335058" class="hidden md:inline-flex items-center gap-2 rounded-full border border-gold/40 px-5 py-2.5 text-sm text-gold-light hover:bg-gold hover:text-ink transition-colors duration-300">(48) 3433-5058</a>
+      <button id="menuBtn" class="lg:hidden p-2 text-zinc-200" aria-label="Menu"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav id="mobileMenu" class="hidden lg:hidden border-t border-white/[0.08] bg-ink px-5 py-6">
+    <a class="block font-serif text-3xl py-2" href="#transparencia">Transparência</a>
+    <a class="block font-serif text-3xl py-2" href="#atuacao">Atuação</a>
+    <a class="block font-serif text-3xl py-2" href="#equipe">Equipe</a>
+    <a class="block font-serif text-3xl py-2" href="#compromissos">Compromissos</a>
+    <a class="block font-serif text-3xl py-2" href="#contato">Contato</a>
+    <a class="block mt-4 text-gold font-mono text-sm" href="tel:+554834335058">(48) 3433-5058</a>
+  </nav>
 </header>
 
-<section class="hero">
-    <h2>Soluções Avançadas em Cosméticos e Biotecnologia</h2>
-    <p>Mais de 15 anos desenvolvendo produtos de alta performance com base científica e inovação tecnológica.</p>
-    <a href="#contato" class="btn">Solicitar Contato</a>
-</section>
-
-<section class="section">
-    <h2>Principais Serviços</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Desenvolvimento de Cosméticos</h3>
-            <p>Formulações personalizadas com alta tecnologia e eficácia comprovada.</p>
-        </div>
-        <div class="card">
-            <h3>Biotecnologia Aplicada</h3>
-            <p>Soluções inovadoras voltadas para saúde e bem-estar.</p>
-        </div>
-        <div class="card">
-            <h3>Consultoria Técnica</h3>
-            <p>Suporte completo para desenvolvimento e regulamentação de produtos.</p>
-        </div>
-        <div class="card">
-            <h3>Comercialização de Produtos</h3>
-            <p>Distribuição de produtos alimentícios e soluções especializadas.</p>
-        </div>
+<main>
+<!-- HERO -->
+<section id="inicio" class="relative min-h-[100svh] pt-[72px] overflow-hidden" style="cursor:crosshair">
+  <div id="heroBg" class="absolute inset-0 -top-[10%] h-[120%]">
+    <img src="img/bio-hero.jpg" alt="" class="w-full h-full object-cover opacity-[0.2]" />
+    <div class="absolute inset-0 bg-ink/70"></div>
+  </div>
+  <div class="absolute inset-0 hero-grid opacity-40"></div>
+  <div class="relative z-10 mx-auto max-w-7xl px-5 md:px-10 pt-14 md:pt-24 pb-20 grid lg:grid-cols-12 gap-12 lg:gap-10 items-end">
+    <div class="lg:col-span-7">
+      <p class="fade-in inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs text-zinc-300 backdrop-blur-md">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_10px_#10B981] animate-pulse"></span>Site institucional · sem vendas online · Criciúma, SC
+      </p>
+      <h1 class="mt-8 font-serif font-light text-[42px] leading-[1] sm:text-6xl lg:text-[86px] tracking-[-0.02em]">
+        <span class="line"><span style="animation-delay:.15s">Ciência aplicada ao</span></span>
+        <span class="line"><span class="italic grad pr-2" style="animation-delay:.29s">cuidado com</span></span>
+        <span class="line"><span style="animation-delay:.43s">transparência.</span></span>
+      </h1>
+      <p class="fade-in mt-8 max-w-xl text-base md:text-lg text-zinc-300 leading-relaxed" style="animation-delay:.7s">A Biozenthi Biotecnologia LTDA atua desde 2010 no desenvolvimento de cosméticos, produtos de higiene pessoal e soluções biotecnológicas. Esta página é publicada pela própria empresa, com informação clara sobre o que fazemos — e sobre o que não fazemos.</p>
+      <div class="fade-in mt-10 flex flex-wrap gap-4" style="animation-delay:.85s">
+        <a href="#atuacao" class="btn-gold">Conhecer a atuação ↘</a>
+        <a href="#transparencia" class="btn-ghost">Declaração de transparência</a>
+      </div>
     </div>
+    <div class="lg:col-span-5 lg:pl-6 max-w-md lg:max-w-none w-full" style="perspective:1200px">
+      <div id="tilt" class="tilt fade-in relative aspect-[4/5] w-full rounded-[28px] overflow-hidden border border-white/10 shadow-[0_40px_120px_-30px_rgba(212,175,55,0.35)]" style="animation-delay:.5s">
+        <img src="img/bio-jar.jpg" alt="Embalagem de cosmético sobre mármore" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 spot"></div>
+        <div class="absolute left-5 right-5 bottom-5 rounded-2xl border border-white/10 bg-[#0D0F13]/80 backdrop-blur-xl p-5">
+          <p class="font-mono text-[11px] tracking-[0.2em] uppercase text-emerald-400">✓ Empresa identificada</p>
+          <p class="mt-2 text-sm text-zinc-300 leading-relaxed">Biozenthi Biotecnologia LTDA · CNPJ 12.318.178/0001-64</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="section">
-    <h2>Sobre a Empresa</h2>
-    <p>
-    A Biozenthi Biotecnologia LTDA é uma empresa brasileira fundada em 2010,
-    especializada na fabricação de cosméticos, produtos de higiene pessoal e soluções biotecnológicas.
-    </p>
+<!-- TRANSPARÊNCIA -->
+<section id="transparencia" class="py-24 md:py-36 bg-ink2 border-y border-white/[0.06]">
+  <div class="mx-auto max-w-7xl px-5 md:px-10 grid lg:grid-cols-12 gap-14">
+    <div class="reveal lg:col-span-6">
+      <p class="ovl text-emerald-400">Declaração de transparência</p>
+      <h2 class="mt-6 font-serif text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.02]">Um projeto <em class="grad">independente</em>, publicado por quem responde por ele.</h2>
+      <div class="mt-8 space-y-5 text-zinc-300 leading-relaxed max-w-xl">
+        <p>Este site é um projeto independente, criado e publicado pela própria <strong class="text-zinc-100 font-medium">Biozenthi Biotecnologia LTDA</strong>, inscrita no CNPJ <strong class="text-zinc-100 font-medium">12.318.178/0001-64</strong>, única responsável pelo seu conteúdo.</p>
+        <p>Não somos canal oficial, parceiro autorizado ou representante de marcas, fabricantes, órgãos públicos ou outras empresas. Este site tem caráter exclusivamente institucional e informativo: não há catálogo, preço ou venda online.</p>
+      </div>
+    </div>
+    <div class="reveal lg:col-span-6">
+      <div class="relative rounded-[28px] border border-white/[0.08] bg-card p-7 md:p-10 overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-emerald-500/10 blur-3xl"></div>
+        <p class="relative inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-emerald-400/30 px-3 py-1.5 text-xs text-emerald-300">✓ Dados cadastrais da empresa responsável</p>
+        <dl class="relative mt-6 divide-y divide-white/[0.08]">
+          <div class="py-5"><dt class="lbl">Razão social</dt><dd class="mt-1 text-zinc-100">Biozenthi Biotecnologia LTDA</dd></div>
+          <div class="py-5"><dt class="lbl">CNPJ</dt><dd class="mt-1 text-zinc-100">12.318.178/0001-64</dd></div>
+          <div class="py-5"><dt class="lbl">Endereço</dt><dd class="mt-1 text-zinc-100">Rua Fernão Dias, 187 — Centro, Criciúma — SC, CEP 88801-670</dd></div>
+          <div class="py-5"><dt class="lbl">Situação cadastral</dt><dd class="mt-1 text-zinc-100">Ativa (fonte: dados publicados pela própria empresa)</dd></div>
+          <div class="py-5"><dt class="lbl">Vínculos</dt><dd class="mt-1 text-zinc-100">Sem vínculo com órgãos públicos, marcas ou empresas de terceiros.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="section" id="contato">
-    <h2>Contato</h2>
-    <p>Email: contato@biozenthi.com.br</p>
-    <p>Telefone: (48) 3433-5058 | (48) 3413-9000</p>
+<!-- MARQUEE -->
+<div class="relative py-12 md:py-16 overflow-hidden mmask" aria-hidden="true">
+  <div class="flex w-max">
+    <div class="marquee flex shrink-0 items-center gap-10 pr-10 font-serif text-4xl md:text-6xl font-light whitespace-nowrap">
+      <span>Desenvolvimento de cosméticos</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span class="italic grad">Pesquisa em biotecnologia</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span>CNPJ 12.318.178/0001-64</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span class="italic grad">Criciúma — Santa Catarina</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span>Projeto independente</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span class="italic grad">Desde 2010</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+    </div>
+    <div class="marquee flex shrink-0 items-center gap-10 pr-10 font-serif text-4xl md:text-6xl font-light whitespace-nowrap">
+      <span>Desenvolvimento de cosméticos</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span class="italic grad">Pesquisa em biotecnologia</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span>CNPJ 12.318.178/0001-64</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span class="italic grad">Criciúma — Santa Catarina</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span>Projeto independente</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+      <span class="italic grad">Desde 2010</span><i class="w-2.5 h-2.5 rotate-45 border border-emerald-400"></i>
+    </div>
+  </div>
+</div>
+
+<!-- ATUAÇÃO (BENTO) -->
+<section id="atuacao" class="py-24 md:py-36">
+  <div class="mx-auto max-w-7xl px-5 md:px-10">
+    <div class="grid lg:grid-cols-12 gap-8 items-end mb-14 md:mb-20">
+      <div class="reveal lg:col-span-7">
+        <p class="ovl text-gold">O que fazemos</p>
+        <h2 class="mt-6 font-serif text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.02]">Ciência, cuidado e <em class="grad">clareza.</em></h2>
+      </div>
+      <p class="reveal lg:col-span-5 text-zinc-300 leading-relaxed">Atuação descrita de forma objetiva e institucional. Não vendemos online e não publicamos preços; condições comerciais são informadas apenas mediante contato direto.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:auto-rows-[290px]">
+      <article class="reveal bento relative rounded-[28px] overflow-hidden border border-white/[0.08] bg-card md:col-span-7 md:row-span-2 min-h-[420px] md:min-h-0">
+        <img src="img/bio-formula.jpg" alt="Formulação em laboratório" class="absolute inset-0 w-full h-full object-cover opacity-50 scale-105" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/10"></div>
+        <div class="relative h-full flex flex-col justify-between p-7 md:p-10">
+          <div class="flex justify-between"><span class="font-mono text-xs tracking-[0.25em] text-gold">01</span><span class="arr w-11 h-11 rounded-full border border-white/15 grid place-items-center">↗</span></div>
+          <div><h3 class="font-serif font-light text-4xl md:text-5xl leading-[1.05]">Desenvolvimento de cosméticos</h3><p class="mt-4 text-sm md:text-base text-zinc-300 leading-relaxed max-w-md">Pesquisa e formulação de produtos para cosméticos e higiene pessoal, seguindo as boas práticas do setor e a legislação vigente.</p></div>
+        </div>
+      </article>
+      <article class="reveal bento relative rounded-[28px] overflow-hidden border border-white/[0.08] bg-card md:col-span-5 min-h-[300px] md:min-h-0">
+        <img src="img/bio-biotech.jpg" alt="Produtos em linha de produção" class="absolute inset-0 w-full h-full object-cover opacity-50 scale-105" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/10"></div>
+        <div class="relative h-full flex flex-col justify-between p-7 md:p-10">
+          <div class="flex justify-between"><span class="font-mono text-xs tracking-[0.25em] text-gold">02</span><span class="arr w-11 h-11 rounded-full border border-white/15 grid place-items-center">↗</span></div>
+          <div><h3 class="font-serif font-light text-3xl leading-[1.05]">Biotecnologia aplicada</h3><p class="mt-4 text-sm md:text-base text-zinc-300 leading-relaxed max-w-md">Estudos e projetos de pesquisa aplicada voltados à inovação de processos e ingredientes, com transparência sobre o estágio de cada projeto.</p></div>
+        </div>
+      </article>
+      <article class="reveal bento relative rounded-[28px] overflow-hidden border border-white/[0.08] bg-card md:col-span-5 min-h-[300px] md:min-h-0">
+        <img src="img/bio-consult.jpg" alt="Frascos e documentos técnicos" class="absolute inset-0 w-full h-full object-cover opacity-50 scale-105" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/10"></div>
+        <div class="relative h-full flex flex-col justify-between p-7 md:p-10">
+          <div class="flex justify-between"><span class="font-mono text-xs tracking-[0.25em] text-gold">03</span><span class="arr w-11 h-11 rounded-full border border-white/15 grid place-items-center">↗</span></div>
+          <div><h3 class="font-serif font-light text-3xl leading-[1.05]">Consultoria técnica</h3><p class="mt-4 text-sm md:text-base text-zinc-300 leading-relaxed max-w-md">Orientação sobre documentação e regularização de produtos de cosméticos e higiene pessoal junto aos órgãos competentes.</p></div>
+        </div>
+      </article>
+      <article class="reveal bento relative rounded-[28px] overflow-hidden border border-white/[0.08] bg-card md:col-span-12 min-h-[300px] md:min-h-0">
+        <img src="img/bio-dist.jpg" alt="Vidrarias de laboratório" class="absolute inset-0 w-full h-full object-cover opacity-50 scale-105" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/10"></div>
+        <div class="relative h-full flex flex-col justify-between p-7 md:p-10">
+          <div class="flex justify-between"><span class="font-mono text-xs tracking-[0.25em] text-gold">04</span><span class="arr w-11 h-11 rounded-full border border-white/15 grid place-items-center">↗</span></div>
+          <div class="md:max-w-xl"><h3 class="font-serif font-light text-3xl leading-[1.05]">Distribuição de produtos</h3><p class="mt-4 text-sm md:text-base text-zinc-300 leading-relaxed max-w-md">Intermediação de compra e venda para clientes empresariais (B2B). Esta página não vende online: condições são combinadas por contato direto.</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
 
-<footer class="footer">
-    <p><strong>Razão Social:</strong> Biozenthi Biotecnologia LTDA</p>
-    <p><strong>CNPJ:</strong> 12.318.178/0001-64</p>
-    <p><strong>Endereço:</strong> Rua Fernao Dias, 187 - Centro - Criciúma/SC - CEP 88801-670</p>
-    <p><strong>Situação:</strong> Ativa</p>
+<!-- EQUIPE -->
+<section id="equipe" class="relative py-24 md:py-36 bg-ink2 border-y border-white/[0.06] overflow-hidden">
+  <div class="mx-auto max-w-7xl px-5 md:px-10">
+    <div class="grid lg:grid-cols-12 gap-12 mb-16 md:mb-24">
+      <div class="reveal lg:col-span-7">
+        <p class="ovl text-emerald-400">Nossa equipe</p>
+        <h2 class="mt-6 font-serif text-4xl sm:text-5xl lg:text-7xl font-light leading-[1]">Por trás de cada processo, <em class="grad">existem pessoas.</em></h2>
+        <p class="mt-8 max-w-xl text-zinc-300 leading-relaxed">Nada do que fazemos seria possível sem os colaboradores da Biozenthi. Esta seção é uma homenagem a quem, diariamente, transforma método, rigor e respeito em trabalho bem feito.</p>
+      </div>
+      <div class="reveal lg:col-span-5">
+        <div class="relative aspect-[4/5] rounded-[28px] overflow-hidden border border-white/10">
+          <img id="teamImg" src="img/bio-team.jpg" alt="Profissional em ambiente de laboratório" class="absolute inset-0 w-full h-[116%] -top-[8%] object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink2 via-transparent to-transparent"></div>
+          <blockquote class="absolute left-6 right-6 bottom-6 font-serif text-2xl md:text-3xl font-light italic leading-snug">“Método, rigor e honestidade — em cada formulação, em cada atendimento.”</blockquote>
+        </div>
+      </div>
+    </div>
+    <ul class="border-b border-white/[0.1]">
+      <li class="reveal srow relative grid md:grid-cols-12 gap-4 md:gap-8 py-9 md:py-12 border-t border-white/[0.1]"><span class="sl absolute -top-px left-0 h-px bg-gradient-to-r from-gold to-emerald-400"></span><span class="md:col-span-1 font-mono text-xs tracking-[0.25em] text-gold pt-2">01</span><h3 class="md:col-span-4 font-serif text-3xl md:text-4xl font-light">Pesquisa &amp; Desenvolvimento</h3><div class="md:col-span-7"><p class="font-serif italic text-xl text-gold-light">A curiosidade que move a empresa.</p><p class="mt-3 text-zinc-300 leading-relaxed max-w-xl">Pessoas que estudam, testam e documentam cada etapa com método científico e honestidade sobre resultados.</p></div></li>
+      <li class="reveal srow relative grid md:grid-cols-12 gap-4 md:gap-8 py-9 md:py-12 border-t border-white/[0.1]"><span class="sl absolute -top-px left-0 h-px bg-gradient-to-r from-gold to-emerald-400"></span><span class="md:col-span-1 font-mono text-xs tracking-[0.25em] text-gold pt-2">02</span><h3 class="md:col-span-4 font-serif text-3xl md:text-4xl font-light">Laboratório &amp; Qualidade</h3><div class="md:col-span-7"><p class="font-serif italic text-xl text-gold-light">Cuidado medido em detalhes.</p><p class="mt-3 text-zinc-300 leading-relaxed max-w-xl">Quem conduz preparações, análises e controles com rigor, para que cada formulação saia do laboratório com segurança.</p></div></li>
+      <li class="reveal srow relative grid md:grid-cols-12 gap-4 md:gap-8 py-9 md:py-12 border-t border-white/[0.1]"><span class="sl absolute -top-px left-0 h-px bg-gradient-to-r from-gold to-emerald-400"></span><span class="md:col-span-1 font-mono text-xs tracking-[0.25em] text-gold pt-2">03</span><h3 class="md:col-span-4 font-serif text-3xl md:text-4xl font-light">Regulatório</h3><div class="md:col-span-7"><p class="font-serif italic text-xl text-gold-light">A ponte entre a ciência e a lei.</p><p class="mt-3 text-zinc-300 leading-relaxed max-w-xl">Profissionais atentos a legislações, prazos e documentos para que produtos e processos estejam sempre regulares.</p></div></li>
+      <li class="reveal srow relative grid md:grid-cols-12 gap-4 md:gap-8 py-9 md:py-12 border-t border-white/[0.1]"><span class="sl absolute -top-px left-0 h-px bg-gradient-to-r from-gold to-emerald-400"></span><span class="md:col-span-1 font-mono text-xs tracking-[0.25em] text-gold pt-2">04</span><h3 class="md:col-span-4 font-serif text-3xl md:text-4xl font-light">Atendimento &amp; Administrativo</h3><div class="md:col-span-7"><p class="font-serif italic text-xl text-gold-light">A escuta que sustenta tudo.</p><p class="mt-3 text-zinc-300 leading-relaxed max-w-xl">Quem recebe cada contato com atenção, organiza a operação e mantém a empresa funcionando com ordem e clareza.</p></div></li>
+    </ul>
+    <p class="reveal mt-14 max-w-3xl text-zinc-300 leading-relaxed"><span class="text-gold font-mono text-xs tracking-[0.25em] uppercase mr-3">Reconhecimento</span>A cada colaborador e colaboradora: obrigado pela dedicação, pela ética no trabalho e pelo compromisso com quem nos procura. Vocês são a parte mais valiosa desta empresa.</p>
+  </div>
+</section>
+
+<!-- COMPROMISSOS -->
+<section id="compromissos" class="py-24 md:py-36">
+  <div class="mx-auto max-w-7xl px-5 md:px-10">
+    <div class="reveal max-w-3xl mb-14 md:mb-20">
+      <p class="ovl text-gold">Compromissos públicos</p>
+      <h2 class="mt-6 font-serif text-4xl sm:text-5xl font-light leading-[1.02]">O que você <em class="grad">pode esperar</em> de nós.</h2>
+      <p class="mt-6 text-zinc-300 leading-relaxed">Regras simples que seguimos na comunicação desta página e no atendimento a qualquer pessoa ou empresa.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="reveal rounded-[24px] border border-white/[0.08] bg-card p-8 hover:border-gold/40 hover:-translate-y-1.5 transition-[border-color,transform] duration-300"><span class="font-serif text-6xl font-light grad leading-none">01</span><h3 class="mt-8 font-serif text-2xl">Identificação clara</h3><p class="mt-3 text-zinc-300 leading-relaxed">Razão social, CNPJ, endereço e contatos publicados em todas as seções desta página.</p></div>
+      <div class="reveal rounded-[24px] border border-white/[0.08] bg-card p-8 hover:border-gold/40 hover:-translate-y-1.5 transition-[border-color,transform] duration-300"><span class="font-serif text-6xl font-light grad leading-none">02</span><h3 class="mt-8 font-serif text-2xl">Sem alegações terapêuticas</h3><p class="mt-3 text-zinc-300 leading-relaxed">Não associamos nossos produtos a cura, tratamento ou prevenção de doenças. Cosmético não é medicamento.</p></div>
+      <div class="reveal rounded-[24px] border border-white/[0.08] bg-card p-8 hover:border-gold/40 hover:-translate-y-1.5 transition-[border-color,transform] duration-300"><span class="font-serif text-6xl font-light grad leading-none">03</span><h3 class="mt-8 font-serif text-2xl">Sem catálogo de vendas</h3><p class="mt-3 text-zinc-300 leading-relaxed">Esta página é institucional: não há loja virtual, carrinho de compras ou preços publicados.</p></div>
+      <div class="reveal rounded-[24px] border border-white/[0.08] bg-card p-8 hover:border-gold/40 hover:-translate-y-1.5 transition-[border-color,transform] duration-300"><span class="font-serif text-6xl font-light grad leading-none">04</span><h3 class="mt-8 font-serif text-2xl">Sem selos sem comprovação</h3><p class="mt-3 text-zinc-300 leading-relaxed">Não exibimos selos, prêmios ou avaliações que não possam ser comprovados publicamente.</p></div>
+      <div class="reveal rounded-[24px] border border-white/[0.08] bg-card p-8 hover:border-gold/40 hover:-translate-y-1.5 transition-[border-color,transform] duration-300"><span class="font-serif text-6xl font-light grad leading-none">05</span><h3 class="mt-8 font-serif text-2xl">Privacidade (LGPD)</h3><p class="mt-3 text-zinc-300 leading-relaxed">Dados enviados pelo formulário são usados apenas para responder ao seu contato, com consentimento expresso.</p></div>
+      <div class="reveal rounded-[24px] border border-white/[0.08] bg-card p-8 hover:border-gold/40 hover:-translate-y-1.5 transition-[border-color,transform] duration-300"><span class="font-serif text-6xl font-light grad leading-none">06</span><h3 class="mt-8 font-serif text-2xl">Sem vínculo com terceiros</h3><p class="mt-3 text-zinc-300 leading-relaxed">Não representamos marcas, órgãos públicos ou outras empresas. Não somos um canal oficial de terceiros.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="py-24 md:py-36 bg-ink2 border-t border-white/[0.06]">
+  <div class="mx-auto max-w-7xl px-5 md:px-10 grid lg:grid-cols-12 gap-14">
+    <div class="reveal lg:col-span-5">
+      <p class="ovl text-gold">Contato</p>
+      <h2 class="mt-6 font-serif text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.02]">Fale <em class="grad">diretamente</em> com a empresa.</h2>
+      <p class="mt-6 text-zinc-300 leading-relaxed">Sem intermediários: o contato abaixo é da própria empresa responsável por este site.</p>
+      <div class="mt-8 divide-y divide-white/[0.08] border-b border-white/[0.08]">
+        <a href="tel:+554834335058" class="block py-6 group"><span class="lbl block">Telefone</span><span class="block mt-1 text-lg text-zinc-100 group-hover:text-gold-light transition-colors">(48) 3433-5058</span></a>
+        <a href="tel:+554834139000" class="block py-6 group"><span class="lbl block">Telefone</span><span class="block mt-1 text-lg text-zinc-100 group-hover:text-gold-light transition-colors">(48) 3413-9000</span></a>
+        <a href="mailto:contato@biozenthi.com.br" class="block py-6 group"><span class="lbl block">E-mail</span><span class="block mt-1 text-lg text-zinc-100 group-hover:text-gold-light transition-colors [overflow-wrap:anywhere]">contato@biozenthi.com.br</span></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Fernao+Dias+187+Centro+Criciuma+SC+88801-670" target="_blank" rel="noreferrer" class="block py-6 group"><span class="lbl block">Endereço</span><span class="block mt-1 text-lg text-zinc-100 group-hover:text-gold-light transition-colors">Rua Fernão Dias, 187 — Centro, Criciúma — SC, 88801-670</span></a>
+      </div>
+    </div>
+    <div class="reveal lg:col-span-7">
+      <form id="contactForm" class="rounded-[28px] border border-white/[0.08] bg-card p-6 sm:p-8 md:p-12 space-y-7">
+        <div class="grid sm:grid-cols-2 gap-7">
+          <label class="block"><span class="lbl">Nome completo</span><input name="nome" required minlength="2" class="field" /></label>
+          <label class="block"><span class="lbl">E-mail</span><input name="email" type="email" required class="field" /></label>
+          <label class="block"><span class="lbl">Telefone (opcional)</span><input name="telefone" class="field" /></label>
+          <label class="block"><span class="lbl">Assunto</span><input name="assunto" required class="field" /></label>
+        </div>
+        <label class="block"><span class="lbl">Mensagem</span><textarea name="mensagem" rows="4" required minlength="5" class="field resize-none"></textarea></label>
+        <label class="flex items-start gap-3 text-sm text-zinc-300 leading-relaxed">
+          <input type="checkbox" name="lgpd" required class="mt-1 w-4 h-4 accent-[#D4AF37]" />
+          <span>Autorizo o uso dos meus dados exclusivamente para resposta a este contato, nos termos da Lei nº 13.709/2018 (LGPD) e da <button type="button" data-doc="privacidade" class="underline underline-offset-4 text-gold-light">Política de Privacidade</button>.</span>
+        </label>
+        <button type="submit" class="btn-gold w-full sm:w-auto">Enviar mensagem</button>
+        <p class="text-xs text-zinc-400">Ao enviar, seu aplicativo de e-mail será aberto com a mensagem pronta para <span class="[overflow-wrap:anywhere]">contato@biozenthi.com.br</span>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="relative pt-20 pb-10 border-t border-white/[0.08] overflow-hidden">
+  <div class="mx-auto max-w-7xl px-5 md:px-10">
+    <div class="space-y-3 mb-16">
+      <p class="rounded-2xl border border-gold/30 bg-[#141824] px-5 py-4 text-sm text-zinc-200 flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>Projeto independente publicado pela Biozenthi Biotecnologia LTDA, CNPJ 12.318.178/0001-64 — única responsável por este conteúdo.</p>
+      <p class="rounded-2xl border border-emerald-400/25 bg-[#141824] px-5 py-4 text-sm text-zinc-200 flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"></span>Site institucional: não vendemos online. Não há catálogo, preços ou compras nesta página.</p>
+    </div>
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <p class="font-serif text-2xl">Biozenthi <em class="text-gold">Biotecnologia</em></p>
+        <p class="mt-6 text-sm text-zinc-400 leading-relaxed max-w-sm">Empresa brasileira fundada em 2010, dedicada ao desenvolvimento de cosméticos, produtos de higiene pessoal e soluções biotecnológicas. Conteúdo meramente informativo.</p>
+      </div>
+      <div class="md:col-span-4 text-sm text-zinc-300 space-y-2">
+        <p class="lbl mb-3">Empresa responsável</p>
+        <p>Biozenthi Biotecnologia LTDA</p>
+        <p>CNPJ 12.318.178/0001-64</p>
+        <p>Rua Fernão Dias, 187 — Centro</p>
+        <p>Criciúma — SC — CEP 88801-670</p>
+        <p class="flex flex-wrap gap-x-3"><a href="tel:+554834335058" class="hover:text-gold-light">(48) 3433-5058</a><a href="tel:+554834139000" class="hover:text-gold-light">(48) 3413-9000</a></p>
+        <p><a href="mailto:contato@biozenthi.com.br" class="hover:text-gold-light [overflow-wrap:anywhere]">contato@biozenthi.com.br</a></p>
+      </div>
+      <div class="md:col-span-3 text-sm">
+        <p class="lbl mb-3">Documentos</p>
+        <ul class="space-y-2 text-zinc-300">
+          <li><button data-doc="privacidade" class="nav-link hover:text-white">Política de Privacidade</button></li>
+          <li><button data-doc="termos" class="nav-link hover:text-white">Termos de Uso</button></li>
+          <li><button data-doc="aviso" class="nav-link hover:text-white">Aviso Legal e Transparência</button></li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-20 font-serif font-light text-[18vw] md:text-[13vw] leading-[0.8] tracking-[-0.04em] text-white/[0.04] select-none" aria-hidden="true">Biozenthi</p>
+    <div class="mt-6 pt-6 border-t border-white/[0.08] flex flex-col md:flex-row justify-between gap-3 text-xs text-zinc-400">
+      <p>© <span id="year"></span> Biozenthi Biotecnologia LTDA. Todos os direitos reservados.</p>
+      <p>Imagens meramente ilustrativas. Informações sem caráter terapêutico.</p>
+    </div>
+  </div>
 </footer>
 
+<!-- DOCUMENTOS LEGAIS -->
+<dialog id="legal" class="max-w-2xl w-[92vw] max-h-[85vh] rounded-2xl bg-card text-zinc-300 border border-white/10 p-0" data-lenis-prevent>
+  <div class="p-7 md:p-9">
+    <div class="flex justify-between items-start gap-4">
+      <h3 id="legalTitle" class="font-serif text-3xl font-light text-white"></h3>
+      <button id="legalClose" class="text-zinc-300 hover:text-white text-2xl leading-none" aria-label="Fechar">×</button>
+    </div>
+    <p class="text-sm text-zinc-400 mt-1">Mantido por Biozenthi Biotecnologia LTDA.</p>
+    <div id="legalBody" class="mt-5 space-y-4 text-sm leading-relaxed"></div>
+  </div>
+</dialog>
+
+<script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script>
+<script>
+(function () {
+  var ID = "Biozenthi Biotecnologia LTDA, CNPJ 12.318.178/0001-64, com sede na Rua Fernão Dias, 187 — Centro, Criciúma — SC, CEP 88801-670";
+  var MAIL = "contato@biozenthi.com.br";
+  var DOCS = {
+    privacidade: ["Política de Privacidade", [
+      "Controladora dos dados: " + ID + ". Contato do encarregado: " + MAIL + ".",
+      "Dados coletados: somente as informações que você digita no formulário de contato (nome, e-mail, telefone opcional, assunto e mensagem).",
+      "Finalidade e base legal: responder ao seu contato, com base no seu consentimento (art. 7º, I, da LGPD). Não vendemos, alugamos nem compartilhamos seus dados para fins de marketing.",
+      "Retenção: os dados são mantidos apenas pelo tempo necessário para o atendimento ou para cumprimento de obrigação legal.",
+      "Seus direitos: confirmar, acessar, corrigir, solicitar exclusão ou revogar o consentimento a qualquer momento pelo e-mail " + MAIL + ".",
+      "Cookies: esta página não utiliza cookies próprios de publicidade. Ferramentas de terceiros eventualmente usadas para medir campanhas seguem as políticas de seus provedores."]],
+    termos: ["Termos de Uso", [
+      "Este site é mantido por " + ID + ".",
+      "O conteúdo tem caráter exclusivamente informativo e institucional. Este site não é uma loja virtual: não há catálogo, preços, carrinho ou compra online. Condições comerciais são tratadas somente por contato direto e formalizadas por documento fiscal.",
+      "As informações aqui publicadas não constituem orientação médica, diagnóstico, prescrição ou tratamento. Cosméticos e produtos de higiene pessoal não têm finalidade terapêutica.",
+      "Imagens ilustrativas podem não representar produtos ou instalações específicas da empresa."]],
+    aviso: ["Aviso Legal e Transparência", [
+      "Este é um projeto independente, publicado pela " + ID + ", única responsável por seu conteúdo.",
+      "A empresa não é canal oficial, parceira autorizada nem representante de marcas, fabricantes, órgãos públicos ou quaisquer outras empresas.",
+      "Marcas e nomes de terceiros eventualmente mencionados pertencem aos seus titulares e são citados apenas para fins de identificação.",
+      "Não utilizamos selos, prêmios ou avaliações sem comprovação pública e não divulgamos alegações de resultados terapêuticos."]]
+  };
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Pop-up de transparência ao entrar
+  var disclaimer = document.getElementById("disclaimer");
+  try { if (!sessionStorage.getItem("bz_disclaimer_seen")) disclaimer.showModal(); } catch (e) {}
+  document.getElementById("disclaimerClose").addEventListener("click", function () {
+    try { sessionStorage.setItem("bz_disclaimer_seen", "1"); } catch (e) {}
+    disclaimer.close();
+  });
+  disclaimer.addEventListener("close", function () { try { sessionStorage.setItem("bz_disclaimer_seen", "1"); } catch (e) {} });
+
+  // Lenis smooth scroll
+  var lenis = window.Lenis ? new Lenis({ duration: 1.25, smoothWheel: true }) : null;
+  if (lenis) { (function raf(t) { lenis.raf(t); requestAnimationFrame(raf); })(0); }
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var el = document.querySelector(a.getAttribute("href"));
+      if (!el) return;
+      e.preventDefault();
+      document.getElementById("mobileMenu").classList.add("hidden");
+      if (lenis) lenis.scrollTo(el, { offset: -72, duration: 1.4 }); else el.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  // Mobile menu
+  document.getElementById("menuBtn").addEventListener("click", function () {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  });
+
+  // Scroll reveals
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+
+  // Parallax
+  var bg = document.getElementById("heroBg"), team = document.getElementById("teamImg");
+  function onScroll() {
+    var y = window.scrollY;
+    if (bg) bg.style.transform = "translateY(" + y * 0.25 + "px)";
+    if (team) {
+      var r = team.parentElement.getBoundingClientRect();
+      var p = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
+      team.style.transform = "translateY(" + (-p * 8) + "%)";
+    }
+  }
+  addEventListener("scroll", onScroll, { passive: true });
+
+  // 3D tilt
+  var tilt = document.getElementById("tilt");
+  tilt.parentElement.addEventListener("mousemove", function (e) {
+    var r = tilt.getBoundingClientRect();
+    var ry = ((e.clientX - r.left) / r.width - 0.5) * 14, rx = -((e.clientY - r.top) / r.height - 0.5) * 14;
+    tilt.style.transform = "rotateX(" + rx + "deg) rotateY(" + ry + "deg)";
+  });
+  tilt.parentElement.addEventListener("mouseleave", function () { tilt.style.transform = ""; });
+
+  // Legal dialog
+  var dlg = document.getElementById("legal");
+  document.querySelectorAll("[data-doc]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var d = DOCS[b.getAttribute("data-doc")];
+      document.getElementById("legalTitle").textContent = d[0];
+      document.getElementById("legalBody").innerHTML = d[1].map(function (p) { return "<p>" + p + "</p>"; }).join("");
+      dlg.showModal();
+    });
+  });
+  document.getElementById("legalClose").addEventListener("click", function () { dlg.close(); });
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+
+  // Contact form -> e-mail
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = new FormData(e.target);
+    var body = "Nome: " + f.get("nome") + "\nE-mail: " + f.get("email") + "\nTelefone: " + (f.get("telefone") || "-") +
+      "\n\n" + f.get("mensagem") + "\n\n[Consentimento LGPD concedido]";
+    location.href = "mailto:" + MAIL + "?subject=" + encodeURIComponent(f.get("assunto")) + "&body=" + encodeURIComponent(body);
+  });
+})();
+</script>
 </body>
 </html>
